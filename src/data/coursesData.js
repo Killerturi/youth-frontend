@@ -172,6 +172,50 @@ const courses = [
 
   {
     id: 6,
+    code: "NODE-BACKEND",
+    title: "Node.js Backend Development (NODE-BACKEND)",
+    category: "Advanced",
+    duration: "6 Months",
+    fees: 12000,
+    syllabus: {
+      semester1: [
+        "Introduction to Programming & JavaScript",
+        "JavaScript Variables (var, let, const)",
+        "Data Types & Operators",
+        "Conditional Statements (if, else, switch)",
+        "Loops (for, while)",
+        "Functions & Arrow Functions",
+        "Arrays & Objects in JavaScript",
+        "Introduction to Asynchronous JavaScript",
+        "Promises & Async/Await",
+        "Introduction to Backend Development",
+        "Node.js Fundamentals",
+        "Node.js Modules & NPM",
+        "File System Module",
+        "Creating HTTP Servers with Node.js",
+        "Express.js Framework Basics"
+      ],
+      semester2: [
+        "Routing & Middleware in Express",
+        "REST API Development",
+        "API Testing with Postman",
+        "MongoDB Database Fundamentals",
+        "Mongoose ODM & Schema Design",
+        "CRUD Operations with MongoDB",
+        "Authentication using JWT",
+        "Password Encryption with Bcrypt",
+        "File Upload using Multer",
+        "Error Handling & Logging",
+        "Role-Based Authorization",
+        "Backend Project Development",
+        "Deployment (Render / VPS / Railway)",
+        "Portfolio Backend Project"
+      ]
+    }
+  },
+
+  {
+    id: 7,
     code: "MERN-AI",
     title: "MERN Stack Web Development with AI (MERN-AI)",
     category: "Advanced",
@@ -203,36 +247,7 @@ const courses = [
 
   },
 
-  {
-    id: 7,
-    code: "ADFAS",
-    title: "Advance Diploma in Financial Accounting System (ADFAS)",
-    category: "Advanced Diploma",
-    duration: "18 Months",
-    fees: 8000,
-    syllabus: {
-      semester1: [
-        "Fundamentals of Computer",
-        "Operating System - Windows Vista",
-        "MS-Word",
-        "Financial Accounting Packages",
-      ],
-      semester2: [
-        "Database Management System (Visual FoxPro)",
-        "MS-Excel with Project Management Tools",
-        "MS-PowerPoint",
-        "Internet & Email",
-        "Two Financial Accounting Packages",
-      ],
-      semester3: [
-        "Payroll System",
-        "Taxation Software",
-        "TDS & e-Return Preparation Software",
-        "Advanced Financial Management with FA packages",
-        "Share Trading Software",
-      ],
-    },
-  },
+  ,
 
   // ===============================
   // DESKTOP PUBLISHING
