@@ -82,7 +82,7 @@ function About() {
           <ScrollReveal delay={200}>
             <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-200 leading-8">
               Established in <span className="text-yellow-400 font-semibold">April 2009</span>,
-              we proudly carry <span className="text-yellow-400 font-semibold">16+ years of excellence</span>
+              we proudly carry <span className="text-yellow-400 font-semibold">16+ years of excellence </span>
               in digital education and skill development.
             </p>
           </ScrollReveal>

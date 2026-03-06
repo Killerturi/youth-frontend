@@ -8,11 +8,12 @@ import Courses from "./pages/Courses";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import WhatsAppFloat from './components/WhatsAppFloat';
+import BackToTop from './components/BackToTop';
 
 function App() {
   return (
     <>
-     
+
       <Router>
         <Navbar />
         <Routes>
@@ -24,7 +25,8 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-      <WhatsAppFloat/>
+      <BackToTop />
+      <WhatsAppFloat />
     </>
   );
 }
