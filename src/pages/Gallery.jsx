@@ -72,11 +72,11 @@ function Gallery() {
       </div>
 
       {/* GRID */}
-      <div className="max-w-7xl mx-auto px-6 columns-1 sm:columns-2 md:columns-3 gap-6 space-y-6">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {galleryImages.map((image, index) => (
           <div
             key={image.id}
-            className="relative group overflow-hidden rounded-2xl cursor-pointer break-inside-avoid"
+            className="relative group overflow-hidden rounded-2xl cursor-pointer"
             onClick={() => {
               setSelectedIndex(index);
               setScale(1);
@@ -85,8 +85,9 @@ function Gallery() {
             <img
               src={image.src}
               alt="Gallery"
-              className="w-full rounded-2xl transform group-hover:scale-110 transition duration-700"
+              className="w-full h-64 object-cover rounded-2xl transform group-hover:scale-110 transition duration-700"
             />
+
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 rounded-2xl"></div>
           </div>
         ))}
@@ -120,7 +121,7 @@ function Gallery() {
               backdrop-blur-lg
               transition duration-300 text-white"
           >
-            <ChevronLeft size={32} />
+            <ChevronLeft size={12} />
           </button>
 
           {/* RIGHT ARROW */}
@@ -132,7 +133,7 @@ function Gallery() {
               backdrop-blur-lg
               transition duration-300 text-white"
           >
-            <ChevronRight size={32} />
+            <ChevronRight size={12} />
           </button>
 
           {/* IMAGE */}

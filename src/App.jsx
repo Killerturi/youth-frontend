@@ -9,6 +9,7 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import WhatsAppFloat from './components/WhatsAppFloat';
 import BackToTop from './components/BackToTop';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
 
       <Router>
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

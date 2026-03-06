@@ -6,6 +6,9 @@ import { useNavigate } from "react-router-dom";
 import CourseModal from "../components/CourseModal";
 import ScrollReveal from "../components/ScrollReveal";
 import GoogleReviews from "../components/GoogleReviews";
+import sample1 from "../assets/certificate/sample1.jpeg";
+import sample2 from "../assets/certificate/sample2.jpeg";
+
 
 function Home() {
     const galleryRef = useRef(null);
@@ -175,6 +178,61 @@ function Home() {
             <div className="flex justify-center py-2 bg-[#f1f5f9]">
                 <div className="w-60 h-[3px] bg-gradient-to-r from-transparent via-orange-500 to-transparent rounded-full"></div>
             </div>
+
+            <section className="py-28 bg-white">
+                <div className="max-w-7xl mx-auto px-6">
+
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold text-[#0f172a]">
+                            Certification & Recognition
+                        </h2>
+                        <p className="text-gray-500 mt-4">
+                            Government approved training centre providing certified courses
+                        </p>
+                        <div className="w-20 h-[3px] bg-orange-500 mx-auto mt-6 rounded-full"></div>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-10">
+
+                        {/* Certificate 1 */}
+                        <div className="group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                            <img
+                                src={sample1}
+                                alt="Government Certificate"
+                                className="w-full h-74 object-cover group-hover:scale-110 transition duration-500"
+                            />
+                            <div className="p-6">
+                                <h3 className="font-semibold text-lg text-[#0f172a]">
+                                    Student Certificate Sample
+                                </h3>
+                                <p className="text-gray-500 text-sm mt-2">
+                                    Example of certificate awarded after successful course completion.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        {/* Certificate 2 */}
+                        <div className="group bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                            <img
+                                src={sample2}
+                                alt="Sample Certificate"
+                                className="w-full h-74 object-cover group-hover:scale-110 transition duration-500"
+                            />
+                            <div className="p-6">
+                                <h3 className="font-semibold text-lg text-[#0f172a]">
+                                    Student Certificate Sample
+                                </h3>
+                                <p className="text-gray-500 text-sm mt-2">
+                                    Example of certificate awarded after successful course completion.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
 
             {/* ================= GALLERY ================= */}
             <section

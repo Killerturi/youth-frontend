@@ -83,8 +83,8 @@ function Contact() {
                 <div className="flex items-start gap-4">
                   <MapPin className="text-orange-400 mt-1" size={22} />
                   <p>
-                    Near New Sannyasi Kali Mandir,  
-                    Ananda More, MG Rd,  
+                    Near New Sannyasi Kali Mandir,
+                    Ananda More, MG Rd,
                     Ukhra, West Bengal 713363
                   </p>
                 </div>
@@ -96,7 +96,7 @@ function Contact() {
 
                 <div className="flex items-center gap-4">
                   <Mail className="text-orange-400" size={20} />
-                  <p>info@yourinstitute.com</p>
+                  <p>apurba.chattaraj@gmail.com</p>
                 </div>
 
               </div>

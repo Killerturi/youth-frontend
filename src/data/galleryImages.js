@@ -6,13 +6,18 @@ import img3 from "../assets/gallery/img3.jpeg";
 import img4 from "../assets/gallery/img4.jpeg";
 import img5 from "../assets/gallery/img5.jpeg";
 import img6 from "../assets/gallery/img6.jpg";
-import img7 from "../assets/gallery/img7.webp";
-import img8 from "../assets/gallery/img8.webp";
-import img9 from "../assets/gallery/img9.webp";
-import img10 from "../assets/gallery/img10.webp";
-import img11 from "../assets/gallery/img11.webp";
+import img7 from "../assets/gallery/img7.jpeg";
+import img8 from "../assets/gallery/img8.jpeg";
+import img9 from "../assets/gallery/img9.jpeg";
+import img10 from "../assets/gallery/img10.jpeg";
+import img11 from "../assets/gallery/img11.jpeg";
 import img12 from "../assets/gallery/img12.webp";
 import img13 from "../assets/gallery/img13.webp";
+import img14 from "../assets/gallery/img14.webp";
+import img15 from "../assets/gallery/img15.webp";
+import img16 from "../assets/gallery/img16.webp";
+import img17 from "../assets/gallery/img17.webp";
+import img18 from "../assets/gallery/img18.webp";
 
 const galleryImages = [
   { id: 1, src: img1 },
@@ -28,6 +33,11 @@ const galleryImages = [
   { id: 11, src: img11 },
   { id: 12, src: img12 },
   { id: 13, src: img13 },
+  { id: 14, src: img14 },
+  { id: 15, src: img15 },
+  { id: 16, src: img16 },
+  { id: 17, src: img17 },
+  { id: 18, src: img18 },
 ];
 
 export default galleryImages;
