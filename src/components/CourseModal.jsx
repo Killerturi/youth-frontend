@@ -1,4 +1,4 @@
-import { X } from "lucide-react";
+import { CheckCircle, Squircle, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import "../style/courseModal.css";
@@ -76,32 +76,44 @@ function CourseModal({ selectedCourse, onClose }) {
 
                         {/* ================= STICKY HEADER ================= */}
                         <div
-                            className={`sticky top-0 z-20
-                         bg-white/95 backdrop-blur-xl
-                         px-10 pt-8 pb-6
-                         border-b
-                         rounded-t-3xl
-                         transition-all duration-300
-                         ${isScrolled ? "shadow-md" : ""}`}
+                            className={`sticky top-0 z-20 bg-white px-6 md:px-8 pt-6 pb-5 border-b transition ${isScrolled ? "shadow-md" : ""
+                                }`}
                         >
                             <button
                                 onClick={onClose}
-                                className="absolute top-6 right-6 text-gray-500 hover:text-black transition"
+                                className="absolute top-5 right-5 text-gray-500 hover:text-black"
                             >
-                                <X size={24} />
+                                <X size={22} />
                             </button>
 
-                            <h2 className="text-3xl font-bold text-indigo-700 mb-4 pr-10">
+                            <h2 className="text-xl md:text-3xl font-bold text-indigo-700 mb-4 pr-8">
                                 {selectedCourse.title}
                             </h2>
 
-                            <div className="grid grid-cols-2 gap-4 text-sm">
-                                <p><strong>Code:</strong> {selectedCourse.code}</p>
-                                <p><strong>Category:</strong> {selectedCourse.category}</p>
-                                <p><strong>Duration:</strong> {selectedCourse.duration}</p>
-                                <p className="text-indigo-600 font-semibold">
-                                    <strong>Fees:</strong> ₹{selectedCourse.fees}
-                                </p>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+
+                                <div className="bg-gray-50 rounded-lg p-2">
+                                    <p className="text-gray-500 text-xs">Code</p>
+                                    <p className="font-medium">{selectedCourse.code}</p>
+                                </div>
+
+                                <div className="bg-gray-50 rounded-lg p-2">
+                                    <p className="text-gray-500 text-xs">Category</p>
+                                    <p className="font-medium">{selectedCourse.category}</p>
+                                </div>
+
+                                <div className="bg-gray-50 rounded-lg p-2">
+                                    <p className="text-gray-500 text-xs">Duration</p>
+                                    <p className="font-medium">{selectedCourse.duration}</p>
+                                </div>
+
+                                <div className="bg-indigo-50 rounded-lg p-2">
+                                    <p className="text-gray-500 text-xs">Fees</p>
+                                    <p className="font-semibold text-indigo-600">
+                                        ₹{selectedCourse.fees}
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
 
@@ -110,8 +122,8 @@ function CourseModal({ selectedCourse, onClose }) {
                             ref={scrollRef}
                             className="flex-1 overflow-y-auto px-10 py-8 scrollbar-hide"
                         >
-                            <h3 className="text-xl font-semibold text-slate-800 mb-6">
-                                Course Syllabus
+                            <h3 className="text-xl font-semibold text-slate-800 mb-6 text-decoration-line: underline">
+                                Course Syllabus :
                             </h3>
 
                             {Array.isArray(selectedCourse.syllabus) ? (
@@ -129,19 +141,42 @@ function CourseModal({ selectedCourse, onClose }) {
                                 Object.entries(selectedCourse.syllabus).map(
                                     ([semester, subjects], index) => (
                                         <div key={index} className="mb-8">
-                                            <h4 className="font-semibold text-indigo-600 mb-4 capitalize">
+
+                                            {/* Semester Badge */}
+                                            <div className="inline-flex items-center gap-2 
+      bg-indigo-100 text-indigo-700 
+      px-3 py-1.5 rounded-full 
+      font-semibold text-l md:text-l 
+      mb-4">
+                                                <span className="w-2 h-2 bg-indigo-500 rounded-full"></span>
                                                 {semester}
-                                            </h4>
+                                            </div>
+
+                                            {/* Subjects */}
                                             <ul className="space-y-3">
                                                 {subjects.map((subject, i) => (
                                                     <li
                                                         key={i}
-                                                        className="bg-indigo-50 p-3 rounded-lg text-gray-700"
+                                                        className="bg-indigo-50 
+                                                            px-4 py-3 
+                                                            rounded-lg 
+                                                            text-gray-700 
+                                                            flex items-start gap-3
+                                                            text-sm md:text-base
+                                                            leading-relaxed"
                                                     >
-                                                        {subject}
+                                                        <span className="mt-[3px] text-indigo-600">
+                                                            <CheckCircle size={16} className="text-indigo-500" />
+                                                        </span>
+
+                                                        <span className="flex-1">
+                                                            {subject}
+                                                        </span>
+
                                                     </li>
                                                 ))}
                                             </ul>
+
                                         </div>
                                     )
                                 )

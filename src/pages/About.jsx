@@ -101,12 +101,15 @@ function About() {
 
         {/* ================= SANDIP SECTION ================= */}
         <ScrollReveal delay={200}>
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
 
             {/* Speech Left */}
             <div className="bg-white/70 backdrop-blur-xl p-10 rounded-3xl shadow-xl border border-gray-100 relative order-2 md:order-1">
 
               <span className="text-7xl text-blue-100 absolute -top-8 left-6 font-serif">“</span>
+              <span className="text-[80px] text-blue-200 absolute -bottom-30 right-6 font-serif select-none">
+                ”
+              </span>
 
               <p className="text-gray-700 leading-8 text-lg">
                 At NUYCTC, our mission is to transform potential into professional success.
@@ -148,7 +151,7 @@ function About() {
 
         {/* ================= APURBA SECTION ================= */}
         <ScrollReveal>
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
+          <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
 
             {/* Image */}
             <div className="relative flex justify-center">
@@ -173,6 +176,9 @@ function About() {
             <div className="bg-white/70 backdrop-blur-xl p-10 rounded-3xl shadow-xl border border-gray-100 relative">
 
               <span className="text-7xl text-blue-100 absolute -top-8 left-6 font-serif">“</span>
+              <span className="text-[80px] text-blue-200 absolute -bottom-30 right-6 font-serif select-none">
+                ”
+              </span>
 
               <p className="text-gray-700 leading-8 text-lg">
                 I warmly welcome all of you to our New Ukhra Youth Computer Training Centre.
@@ -203,7 +209,7 @@ function About() {
 
       </section>
 
-      <section className="relative py-12 px-4 md:px-6 bg-gradient-to-b from-white to-[#f8fafc]">
+      <section className="relative py-12 px-4 mb-6 md:px-6 bg-gradient-to-b from-white to-[#f8fafc]">
         <ScrollReveal>
 
           <div className="max-w-7xl mx-auto">
@@ -223,6 +229,10 @@ function About() {
               <span className="absolute -top-6 md:-top-12 left-3 md:left-6 text-[60px] md:text-[120px] text-blue-100 font-serif select-none">
                 “
               </span>
+              <span className="absolute -bottom-4 md:-bottom-20 right-3 md:right-6 text-[60px] md:text-[120px] text-blue-200 font-serif select-none">
+                ”
+              </span>
+
 
               <div className="relative z-10 space-y-6 md:space-y-8">
 
@@ -301,11 +311,22 @@ function About() {
               { value: 100, label: "Practical Focus", suffix: "%" },
             ].map((item, i) => (
               <ScrollReveal key={i} delay={i * 200}>
-                <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-14 rounded-3xl shadow-2xl hover:scale-105 transition duration-500">
+                <div className="bg-white/10 backdrop-blur-xl border border-white/20 
+                                    p-14 rounded-3xl shadow-2xl 
+                                    hover:scale-105 transition duration-500 
+                                    flex flex-col justify-center h-full">
+
                   <h2 className="text-5xl font-bold text-yellow-400 mb-4">
-                    <AnimatedNumber value={item.value} suffix={item.suffix || ""} />
+                    <AnimatedNumber
+                      value={item.value}
+                      suffix={item.suffix || ""}
+                    />
                   </h2>
-                  <p className="text-gray-200 text-lg">{item.label}</p>
+
+                  <p className="text-gray-200 text-lg min-h-[56px] flex items-center justify-center">
+                    {item.label}
+                  </p>
+
                 </div>
               </ScrollReveal>
             ))}
@@ -318,12 +339,13 @@ function About() {
 
       {/* ================= VISION MISSION ================= */}
       <section className="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-32">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-stretch">
 
           <ScrollReveal>
-            <div className="bg-white/10 backdrop-blur-lg p-12 rounded-3xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-lg p-12 rounded-3xl border border-white/20 h-full flex flex-col">
               <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-              <p className="text-gray-200 leading-7">
+
+              <p className="text-gray-200 leading-7 flex-1">
                 To become a center of excellence in digital education
                 by fostering innovation, professionalism, and continuous growth.
               </p>
@@ -331,9 +353,10 @@ function About() {
           </ScrollReveal>
 
           <ScrollReveal delay={200}>
-            <div className="bg-white/10 backdrop-blur-lg p-12 rounded-3xl border border-white/20">
+            <div className="bg-white/10 backdrop-blur-lg p-12 rounded-3xl border border-white/20 h-full flex flex-col">
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <ul className="space-y-3 text-gray-200">
+
+              <ul className="space-y-3 text-gray-200 flex-1">
                 <li>• Deliver industry-aligned programs</li>
                 <li>• Bridge academic & industry gaps</li>
                 <li>• Develop technical confidence</li>
