@@ -68,7 +68,7 @@ function About() {
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 to-[#0f172a]/70"></div>
 
-       
+
 
         {/* Content */}
         <div className="relative max-w-6xl mx-auto text-center">
@@ -203,30 +203,30 @@ function About() {
 
       </section>
 
-      <section className="relative py-12 px-6 bg-gradient-to-b from-white to-[#f8fafc]">
+      <section className="relative py-12 px-4 md:px-6 bg-gradient-to-b from-white to-[#f8fafc]">
         <ScrollReveal>
 
           <div className="max-w-7xl mx-auto">
 
             {/* Heading */}
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-[#0f172a]">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold text-[#0f172a]">
                 A Message to Our Students
               </h2>
-              <div className="w-24 h-1 bg-blue-600 mx-auto mt-6 rounded-full"></div>
+              <div className="w-20 md:w-24 h-1 bg-blue-600 mx-auto mt-4 md:mt-6 rounded-full"></div>
             </div>
 
             {/* Premium Text Card */}
-            <div className="bg-white p-14 rounded-3xl shadow-2xl border border-gray-100 relative leading-8 text-lg text-gray-700">
+            <div className="bg-white p-6 md:p-14 rounded-2xl md:rounded-3xl shadow-2xl border border-gray-100 relative leading-7 md:leading-8 text-base md:text-lg text-gray-700">
 
               {/* Decorative Quote */}
-              <span className="absolute -top-12 left-6 text-[120px] text-blue-100 font-serif select-none">
+              <span className="absolute -top-6 md:-top-12 left-3 md:left-6 text-[60px] md:text-[120px] text-blue-100 font-serif select-none">
                 “
               </span>
 
-              <div className="relative z-10 space-y-8">
+              <div className="relative z-10 space-y-6 md:space-y-8">
 
-                <p className="text-xl font-semibold text-gray-900">
+                <p className="text-lg md:text-xl font-semibold text-gray-900">
                   Dear Students,
                 </p>
 
@@ -255,11 +255,11 @@ function About() {
                 </p>
 
                 {/* Encouragement Block */}
-                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-600 p-8 rounded-2xl">
-                  <p className="font-semibold text-blue-900 text-lg mb-4">
+                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-600 p-5 md:p-8 rounded-xl md:rounded-2xl">
+                  <p className="font-semibold text-blue-900 text-lg mb-3 md:mb-4">
                     I encourage you to:
                   </p>
-                  <ul className="space-y-3">
+                  <ul className="space-y-2 md:space-y-3">
                     <li>• Attend classes regularly and practice daily.</li>
                     <li>• Stay curious and keep learning beyond the classroom.</li>
                     <li>• Maintain discipline and respect within the centre.</li>
@@ -273,13 +273,12 @@ function About() {
                 </p>
 
                 <p>
-                  Your success will not only make your family proud but will also bring pride to our centre and our community. Remember, success comes to those who are dedicated and hardworking. The government has provided you with this opportunity—make the most of it. Your growth is our pride, and your success will inspire many others in your community.
+                  Your success will not only make your family proud but will also bring pride to our centre and our community. Remember, success comes to those who are dedicated and hardworking.
                 </p>
 
                 <p className="font-semibold text-gray-900">
                   Stay focused, stay positive, and keep moving forward.
                 </p>
-
 
               </div>
 
