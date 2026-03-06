@@ -2,6 +2,8 @@ import { useEffect, useState, useRef } from "react";
 import ScrollReveal from "../components/ScrollReveal";
 import apurbaImg from "../assets/about/apurba.jpeg";
 import sandipImg from "../assets/about/sandip.jpeg";
+import aboutBg from "../assets/images/herobg1.jpeg";
+
 
 function About() {
 
@@ -56,12 +58,21 @@ function About() {
     <div className="bg-[#f8fafc] overflow-hidden">
 
       {/* ================= HERO ================= */}
-      <section className="relative bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#2563eb] text-white py-32 px-6 overflow-hidden">
+      <section
+        className="relative text-white py-32 px-6 overflow-hidden bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${aboutBg})`,
+        }}
+      >
 
-        <div className="absolute -top-32 -left-32 w-96 h-96 bg-blue-500 opacity-20 blur-3xl rounded-full"></div>
-        <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-indigo-500 opacity-20 blur-3xl rounded-full"></div>
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 to-[#0f172a]/70"></div>
 
+       
+
+        {/* Content */}
         <div className="relative max-w-6xl mx-auto text-center">
+
           <ScrollReveal>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight">
               About NUYCTC
@@ -71,10 +82,11 @@ function About() {
           <ScrollReveal delay={200}>
             <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-200 leading-8">
               Established in <span className="text-yellow-400 font-semibold">April 2009</span>,
-              we proudly carry <span className="text-yellow-400 font-semibold">16+ years of excellence </span>
+              we proudly carry <span className="text-yellow-400 font-semibold">16+ years of excellence</span>
               in digital education and skill development.
             </p>
           </ScrollReveal>
+
         </div>
       </section>
 
@@ -191,8 +203,8 @@ function About() {
 
       </section>
 
-      <ScrollReveal>
-        <section className="relative py-12 px-6 bg-gradient-to-b from-white to-[#f8fafc]">
+      <section className="relative py-12 px-6 bg-gradient-to-b from-white to-[#f8fafc]">
+        <ScrollReveal>
 
           <div className="max-w-7xl mx-auto">
 
@@ -275,8 +287,8 @@ function About() {
 
           </div>
 
-        </section>
-      </ScrollReveal>
+        </ScrollReveal>
+      </section>
 
       {/* ================= STATS ================= */}
       <section className="bg-[#0f172a] py-10 relative overflow-hidden">
