@@ -20,7 +20,7 @@ function Courses() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-indigo-900/90 to-blue-800/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 to-[#0f172a]/70"></div>
 
         <div className="relative z-10 px-6 max-w-4xl">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-wide">
