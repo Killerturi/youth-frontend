@@ -1,0 +1,40 @@
+.scallop {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+
+    background: radial-gradient(circle at 10px 10px,
+            white 10px,
+            transparent 11px) repeat-x;
+
+    background-size: 20px 20px;
+}
+
+
+@keyframes fadeText {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.animate-fadeText {
+    animation: fadeText 3s ease-in-out;
+}
