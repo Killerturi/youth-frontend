@@ -52,7 +52,7 @@ function Contact() {
 
               <textarea
                 placeholder="Your Message"
-                rows="4"
+                rows="2"
                 className="w-full border border-gray-300 p-4 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500"
               ></textarea>
 

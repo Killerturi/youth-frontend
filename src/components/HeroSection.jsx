@@ -12,7 +12,7 @@ import "../style/heroSection.css";
 function HeroSection() {
   const navigate = useNavigate();
 
-  const backgrounds = [herobg1, herobg2, herobg3, herobg4,herobg5,herobg6];
+  const backgrounds = [herobg1, herobg2, herobg3, herobg4, herobg5, herobg6];
   const [currentBg, setCurrentBg] = useState(0);
 
   const [typedText, setTypedText] = useState("");
@@ -57,18 +57,15 @@ function HeroSection() {
   return (
     <section className="relative min-h-[95vh] flex items-center overflow-hidden">
       {/* ===== BACKGROUND SLIDER WITH ZOOM ===== */}
-      <div
-        className="absolute inset-0 flex transition-transform duration-[2000ms] ease-in-out"
-        style={{
-          width: `${backgrounds.length * 100}%`,
-          transform: `translateX(-${currentBg * (100 / backgrounds.length)}%)`,
-        }}
-      >
+      <div className="absolute inset-0">
         {backgrounds.map((bg, index) => (
           <div
             key={index}
-            className="elite-bg w-full h-full bg-cover bg-center"
-            style={{ backgroundImage: `url(${bg})` }}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-[1000ms] ease-in-out ${index === currentBg ? "opacity-100" : "opacity-0"
+              }`}
+            style={{
+              backgroundImage: `url(${bg})`,
+            }}
           />
         ))}
       </div>
@@ -82,9 +79,8 @@ function HeroSection() {
       {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-10 items-center">
         <div
-          className={`transition-all duration-1000 ${
-            show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-          }`}
+          className={`transition-all duration-1000 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+            }`}
         >
           <h1 className="royal-heading leading-tight mb-6 text-4xl md:text-6xl text-white">
             New Ukhra Youth <br />
