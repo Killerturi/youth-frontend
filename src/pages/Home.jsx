@@ -8,6 +8,7 @@ import ScrollReveal from "../components/ScrollReveal";
 import GoogleReviews from "../components/GoogleReviews";
 import sample1 from "../assets/certificate/sample1.jpeg";
 import sample2 from "../assets/certificate/sample2.jpeg";
+import VideoCarousel from "../components/VideoCarousel";
 
 
 function Home() {
@@ -91,12 +92,13 @@ function Home() {
                         </div>
                     </ScrollReveal>
 
-                    <div className="grid md:grid-cols-4 gap-10 text-center">
+                    <div className="grid md:grid-cols-5 gap-10 text-center">
                         {[
                             { value: 2009, label: "Established" },
                             { value: 16, label: "Years of Excellence", suffix: "+" },
                             { value: 4400, label: "Students Trained", suffix: "+" },
                             { value: 100, label: "Practical Focus", suffix: "%" },
+                            { value: 520, label: "Website Visitors", suffix: "" },
                         ].map((item, i) => (
                             <ScrollReveal key={i} delay={i * 200}>
                                 <div className="bg-white/10 backdrop-blur-xl border border-white/20 
@@ -303,7 +305,13 @@ function Home() {
 
                         </div>
                     </ScrollReveal>
+                    <ScrollReveal delay={400}>
+                        <h3 className="text-2xl font-semibold text-white text-center mt-20">
+                            Student Video Testimonials
+                        </h3>
 
+                        <VideoCarousel />
+                    </ScrollReveal>
                 </div>
             </section>
 

@@ -36,3 +36,13 @@ button {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+
+
+.rotate-y-12 {
+  transform: perspective(1200px) rotateY(25deg);
+}
+
+.-rotate-y-12 {
+  transform: perspective(1200px) rotateY(-25deg);
+}
