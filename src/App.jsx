@@ -10,12 +10,25 @@ import Contact from "./pages/Contact";
 import WhatsAppFloat from './components/WhatsAppFloat';
 import BackToTop from './components/BackToTop';
 import ScrollToTop from './components/ScrollToTop';
+import { initGA } from './utils/analytics';
+import { useEffect } from 'react';
+import AnalyticsTracker from './components/AnalyticsTracker';
 
 function App() {
+
+
+  useEffect(() => {
+    initGA();
+  }, []);
+
+
+
+
   return (
     <>
 
       <Router>
+        <AnalyticsTracker />
         <Navbar />
         <ScrollToTop />
         <Routes>
