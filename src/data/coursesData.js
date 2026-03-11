@@ -38,7 +38,7 @@ const courses = [
     title: "Diploma in Financial Accounting System (DFAS)",
     category: "Diploma",
     duration: "12 Months",
-    fees: 5000,
+    fees: 8000,
     syllabus: {
       semester1: [
         "Fundamentals of Computer",
