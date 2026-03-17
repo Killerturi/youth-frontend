@@ -89,6 +89,9 @@ function Navbar() {
             <NavLink to="/gallery" className="hover:text-blue-900 transition">
               Gallery
             </NavLink>
+             {/* <NavLink to="/blog" className="hover:text-blue-900 transition">
+              Blog
+            </NavLink> */}
             <NavLink to="/contact" className="hover:text-blue-900 transition">
               Contact
             </NavLink>
