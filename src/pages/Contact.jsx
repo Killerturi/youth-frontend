@@ -14,14 +14,15 @@ function Contact() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 to-[#0f172a]/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/50 to-[#0f172a]/40"></div>
 
-        <div className="relative z-10 px-6 max-w-3xl">
-          <h1 className="text-5xl font-bold text-white tracking-wide mb-4">
-            Contact Us
+        <div className="relative z-10 max-w-6xl px-6">
+          <h1 className="text-5xl font-bold text-white">
+            We are eager to <span className="text-orange-500">hear from you!</span>
           </h1>
-          <p className="text-gray-200 text-lg">
-            Let’s connect and build your future together.
+
+          <p className="text-gray-200 text-3xl mt-4">
+            Feel free to get in touch with us if you have any questions
           </p>
         </div>
       </section>
