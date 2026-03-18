@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import { Helmet } from "react-helmet";
 import ScrollReveal from "../components/ScrollReveal";
 import apurbaImg from "../assets/about/apurba.jpeg";
 import sandipImg from "../assets/about/sandip.jpeg";
@@ -55,336 +56,351 @@ function About() {
   }
 
   return (
-    <div className="bg-[#f8fafc] overflow-hidden">
+    <>
+      <Helmet>
+        <title>About Ukhra Youth Computer Training Centre</title>
 
-      {/* ================= HERO ================= */}
-      <section
-        className="relative text-white py-32 px-6 overflow-hidden bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${aboutBg})`,
-        }}
-      >
+        <meta
+          name="description"
+          content="Ukhra Youth is a leading computer training centre in Ukhra, Pandeshwar & nearby areas offering quality education and certification."
+        />
 
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 to-[#0f172a]/70"></div>
+        <meta
+          name="keywords"
+          content="about Ukhra Youth, computer institute Ukhra details, training centre Pandeshwar"
+        />
+      </Helmet>
+      <div className="bg-[#f8fafc] overflow-hidden">
+
+        {/* ================= HERO ================= */}
+        <section
+          className="relative text-white py-32 px-6 overflow-hidden bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${aboutBg})`,
+          }}
+        >
+
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 to-[#0f172a]/70"></div>
 
 
 
-        {/* Content */}
-        <div className="relative max-w-6xl mx-auto text-center">
+          {/* Content */}
+          <div className="relative max-w-6xl mx-auto text-center">
+
+            <ScrollReveal>
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight">
+                About NUYCTC
+              </h1>
+            </ScrollReveal>
+
+            <ScrollReveal delay={200}>
+              <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-200 leading-8">
+                Established in <span className="text-yellow-400 font-semibold">April 2009</span>,
+                we proudly carry <span className="text-yellow-400 font-semibold">16+ years of excellence </span>
+                in digital education and skill development.
+              </p>
+            </ScrollReveal>
+
+          </div>
+        </section>
+
+        {/* ================= LEADERSHIP ================= */}
+        <section className="max-w-7xl mx-auto px-6 py-12">
 
           <ScrollReveal>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight">
-              About NUYCTC
-            </h1>
+            <h2 className="text-5xl font-bold text-center text-[#0f172a] mb-24 tracking-tight">
+              Message From Our Leadership
+            </h2>
           </ScrollReveal>
 
+          {/* ================= SANDIP SECTION ================= */}
           <ScrollReveal delay={200}>
-            <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-200 leading-8">
-              Established in <span className="text-yellow-400 font-semibold">April 2009</span>,
-              we proudly carry <span className="text-yellow-400 font-semibold">16+ years of excellence </span>
-              in digital education and skill development.
-            </p>
+            <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
+
+              {/* Speech Left */}
+              <div className="bg-white/70 backdrop-blur-xl p-10 rounded-3xl shadow-xl border border-gray-100 relative order-2 md:order-1">
+
+                <span className="text-7xl text-blue-100 absolute -top-8 left-6 font-serif">“</span>
+                <span className="text-[80px] text-blue-200 absolute -bottom-30 right-6 font-serif select-none">
+                  ”
+                </span>
+
+                <p className="text-gray-700 leading-8 text-lg">
+                  At NUYCTC, our mission is to transform potential into professional success.
+                  We believe education should empower students with both knowledge and confidence.
+                </p>
+
+                <p className="text-gray-700 leading-8 text-lg mt-6">
+                  Discipline, dedication, and continuous learning are the pillars of long-term achievement.
+                  Together, we aim to shape skilled professionals ready for the evolving digital era.
+                </p>
+
+                <p className="mt-8 font-semibold text-blue-800">
+                  Your growth is our pride.
+                </p>
+
+              </div>
+
+              {/* Image Right */}
+              <div className="relative flex justify-center order-1 md:order-2">
+                <div className="relative w-80 h-80">
+                  <img
+                    src={sandipImg}
+                    alt="Sandip Mondal"
+                    className="w-full h-full object-cover rounded-3xl shadow-2xl"
+                  />
+                  <div className="absolute -bottom-6 -left-6 bg-white px-6 py-3 rounded-xl shadow-lg">
+                    <p className="text-lg font-semibold text-[#0f172a]">
+                      Sandip Mondal
+                    </p>
+                    <p className="text-sm text-blue-700">
+                      Director (NEW UKHRA YCTC)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </ScrollReveal>
 
-        </div>
-      </section>
+          {/* ================= APURBA SECTION ================= */}
+          <ScrollReveal>
+            <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
 
-      {/* ================= LEADERSHIP ================= */}
-      <section className="max-w-7xl mx-auto px-6 py-12">
-
-        <ScrollReveal>
-          <h2 className="text-5xl font-bold text-center text-[#0f172a] mb-24 tracking-tight">
-            Message From Our Leadership
-          </h2>
-        </ScrollReveal>
-
-        {/* ================= SANDIP SECTION ================= */}
-        <ScrollReveal delay={200}>
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
-
-            {/* Speech Left */}
-            <div className="bg-white/70 backdrop-blur-xl p-10 rounded-3xl shadow-xl border border-gray-100 relative order-2 md:order-1">
-
-              <span className="text-7xl text-blue-100 absolute -top-8 left-6 font-serif">“</span>
-              <span className="text-[80px] text-blue-200 absolute -bottom-30 right-6 font-serif select-none">
-                ”
-              </span>
-
-              <p className="text-gray-700 leading-8 text-lg">
-                At NUYCTC, our mission is to transform potential into professional success.
-                We believe education should empower students with both knowledge and confidence.
-              </p>
-
-              <p className="text-gray-700 leading-8 text-lg mt-6">
-                Discipline, dedication, and continuous learning are the pillars of long-term achievement.
-                Together, we aim to shape skilled professionals ready for the evolving digital era.
-              </p>
-
-              <p className="mt-8 font-semibold text-blue-800">
-                Your growth is our pride.
-              </p>
-
-            </div>
-
-            {/* Image Right */}
-            <div className="relative flex justify-center order-1 md:order-2">
-              <div className="relative w-80 h-80">
-                <img
-                  src={sandipImg}
-                  alt="Sandip Mondal"
-                  className="w-full h-full object-cover rounded-3xl shadow-2xl"
-                />
-                <div className="absolute -bottom-6 -left-6 bg-white px-6 py-3 rounded-xl shadow-lg">
-                  <p className="text-lg font-semibold text-[#0f172a]">
-                    Sandip Mondal
-                  </p>
-                  <p className="text-sm text-blue-700">
-                    Director (NEW UKHRA YCTC)
-                  </p>
+              {/* Image */}
+              <div className="relative flex justify-center">
+                <div className="relative w-80 h-80">
+                  <img
+                    src={apurbaImg}
+                    alt="Apurba Chattaraj"
+                    className="w-full h-full object-cover rounded-3xl shadow-2xl"
+                  />
+                  <div className="absolute -bottom-6 -right-6 bg-white px-6 py-3 rounded-xl shadow-lg">
+                    <p className="text-lg font-semibold text-[#0f172a]">
+                      Apurba Chattaraj
+                    </p>
+                    <p className="text-sm text-blue-700">
+                      Centre In-Charge (NEW UKHRA YCTC)
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-          </div>
-        </ScrollReveal>
+              {/* Speech */}
+              <div className="bg-white/70 backdrop-blur-xl p-10 rounded-3xl shadow-xl border border-gray-100 relative">
 
-        {/* ================= APURBA SECTION ================= */}
-        <ScrollReveal>
-          <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
+                <span className="text-7xl text-blue-100 absolute -top-8 left-6 font-serif">“</span>
+                <span className="text-[80px] text-blue-200 absolute -bottom-30 right-6 font-serif select-none">
+                  ”
+                </span>
 
-            {/* Image */}
-            <div className="relative flex justify-center">
-              <div className="relative w-80 h-80">
-                <img
-                  src={apurbaImg}
-                  alt="Apurba Chattaraj"
-                  className="w-full h-full object-cover rounded-3xl shadow-2xl"
-                />
-                <div className="absolute -bottom-6 -right-6 bg-white px-6 py-3 rounded-xl shadow-lg">
-                  <p className="text-lg font-semibold text-[#0f172a]">
-                    Apurba Chattaraj
-                  </p>
-                  <p className="text-sm text-blue-700">
-                    Centre In-Charge (NEW UKHRA YCTC)
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Speech */}
-            <div className="bg-white/70 backdrop-blur-xl p-10 rounded-3xl shadow-xl border border-gray-100 relative">
-
-              <span className="text-7xl text-blue-100 absolute -top-8 left-6 font-serif">“</span>
-              <span className="text-[80px] text-blue-200 absolute -bottom-30 right-6 font-serif select-none">
-                ”
-              </span>
-
-              <p className="text-gray-700 leading-8 text-lg">
-                I warmly welcome all of you to our New Ukhra Youth Computer Training Centre.
-                By enrolling here, you have taken a meaningful step toward building a strong
-                and independent future in today’s digital world.
-              </p>
-
-              <p className="text-gray-700 leading-8 text-lg mt-6">
-                Computer knowledge is not just a skill — it is a gateway to employment,
-                entrepreneurship, and self-reliance. Through this training, you are building
-                confidence, discipline, and professional excellence.
-              </p>
-
-              <p className="text-gray-700 leading-8 text-lg mt-6">
-                Believe in yourself. Stay focused. Work hard. Your success will inspire many others.
-              </p>
-
-              <p className="mt-8 font-semibold text-blue-800">
-                With best wishes for your bright and successful future.
-              </p>
-
-            </div>
-
-          </div>
-        </ScrollReveal>
-
-
-
-      </section>
-
-      <section className="relative py-12 px-4 mb-6 md:px-6 bg-gradient-to-b from-white to-[#f8fafc]">
-        <ScrollReveal>
-
-          <div className="max-w-7xl mx-auto">
-
-            {/* Heading */}
-            <div className="text-center mb-10 md:mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-[#0f172a]">
-                A Message to Our Students
-              </h2>
-              <div className="w-20 md:w-24 h-1 bg-blue-600 mx-auto mt-4 md:mt-6 rounded-full"></div>
-            </div>
-
-            {/* Premium Text Card */}
-            <div className="bg-white p-6 md:p-14 rounded-2xl md:rounded-3xl shadow-2xl border border-gray-100 relative leading-7 md:leading-8 text-base md:text-lg text-gray-700">
-
-              {/* Decorative Quote */}
-              <span className="absolute -top-6 md:-top-12 left-3 md:left-6 text-[60px] md:text-[120px] text-blue-100 font-serif select-none">
-                “
-              </span>
-              <span className="absolute -bottom-4 md:-bottom-20 right-3 md:right-6 text-[60px] md:text-[120px] text-blue-200 font-serif select-none">
-                ”
-              </span>
-
-
-              <div className="relative z-10 space-y-6 md:space-y-8">
-
-                <p className="text-lg md:text-xl font-semibold text-gray-900">
-                  Dear Students,
+                <p className="text-gray-700 leading-8 text-lg">
+                  I warmly welcome all of you to our New Ukhra Youth Computer Training Centre.
+                  By enrolling here, you have taken a meaningful step toward building a strong
+                  and independent future in today’s digital world.
                 </p>
 
-                <p>
-                  I warmly welcome all of you to our
-                  <span className="font-semibold text-blue-800">
-                    {" "}New Ukhra Youth Computer Training Centre
-                  </span>. By enrolling here, you have taken a meaningful step toward building a strong and independent future in today’s digital world.
+                <p className="text-gray-700 leading-8 text-lg mt-6">
+                  Computer knowledge is not just a skill — it is a gateway to employment,
+                  entrepreneurship, and self-reliance. Through this training, you are building
+                  confidence, discipline, and professional excellence.
                 </p>
 
-                <p>
-                  In today’s competitive era,
-                  <span className="font-semibold"> computer knowledge is not just a skill</span> —
-                  it is a gateway to employment, entrepreneurship, and self-reliance.
+                <p className="text-gray-700 leading-8 text-lg mt-6">
+                  Believe in yourself. Stay focused. Work hard. Your success will inspire many others.
                 </p>
 
-                <p>
-                  Our state,
-                  <span className="font-semibold text-blue-800"> West Bengal</span>,
-                  has always been known for its rich culture, intelligence, and talent.
-                  You are the new generation who will carry this legacy forward in the field of technology and innovation.
-                </p>
-
-                <p>
-                  Through this training, you are not only learning computer applications but also building confidence, discipline, and professional skills.
-                </p>
-
-                {/* Encouragement Block */}
-                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-600 p-5 md:p-8 rounded-xl md:rounded-2xl">
-                  <p className="font-semibold text-blue-900 text-lg mb-3 md:mb-4">
-                    I encourage you to:
-                  </p>
-                  <ul className="space-y-2 md:space-y-3">
-                    <li>• Attend classes regularly and practice daily.</li>
-                    <li>• Stay curious and keep learning beyond the classroom.</li>
-                    <li>• Maintain discipline and respect within the centre.</li>
-                    <li>• Use your digital knowledge responsibly and ethically.</li>
-                    <li>• Believe in your abilities and aim high.</li>
-                  </ul>
-                </div>
-
-                <p>
-                  The government has provided this platform for your growth. Make full use of this opportunity. Believe in yourself, stay focused on your goals, and never be afraid of hard work.
-                </p>
-
-                <p>
-                  Your success will not only make your family proud but will also bring pride to our centre and our community. Remember, success comes to those who are dedicated and hardworking.
-                </p>
-
-                <p className="font-semibold text-gray-900">
-                  Stay focused, stay positive, and keep moving forward.
+                <p className="mt-8 font-semibold text-blue-800">
+                  With best wishes for your bright and successful future.
                 </p>
 
               </div>
 
             </div>
+          </ScrollReveal>
 
-          </div>
 
-        </ScrollReveal>
-      </section>
 
-      {/* ================= STATS ================= */}
-      <section className="bg-[#0f172a] py-10 relative overflow-hidden">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-10 text-center">
+        </section>
 
-            {[
-              { value: 2009, label: "Established" },
-              { value: 16, label: "Years of Excellence", suffix: "+" },
-              { value: 4400, label: "Students Trained", suffix: "+" },
-              { value: 100, label: "Practical Focus", suffix: "%" },
-            ].map((item, i) => (
-              <ScrollReveal key={i} delay={i * 200}>
-                <div className="bg-white/10 backdrop-blur-xl border border-white/20 
+        <section className="relative py-12 px-4 mb-6 md:px-6 bg-gradient-to-b from-white to-[#f8fafc]">
+          <ScrollReveal>
+
+            <div className="max-w-7xl mx-auto">
+
+              {/* Heading */}
+              <div className="text-center mb-10 md:mb-16">
+                <h2 className="text-3xl md:text-5xl font-bold text-[#0f172a]">
+                  A Message to Our Students
+                </h2>
+                <div className="w-20 md:w-24 h-1 bg-blue-600 mx-auto mt-4 md:mt-6 rounded-full"></div>
+              </div>
+
+              {/* Premium Text Card */}
+              <div className="bg-white p-6 md:p-14 rounded-2xl md:rounded-3xl shadow-2xl border border-gray-100 relative leading-7 md:leading-8 text-base md:text-lg text-gray-700">
+
+                {/* Decorative Quote */}
+                <span className="absolute -top-6 md:-top-12 left-3 md:left-6 text-[60px] md:text-[120px] text-blue-100 font-serif select-none">
+                  “
+                </span>
+                <span className="absolute -bottom-4 md:-bottom-20 right-3 md:right-6 text-[60px] md:text-[120px] text-blue-200 font-serif select-none">
+                  ”
+                </span>
+
+
+                <div className="relative z-10 space-y-6 md:space-y-8">
+
+                  <p className="text-lg md:text-xl font-semibold text-gray-900">
+                    Dear Students,
+                  </p>
+
+                  <p>
+                    I warmly welcome all of you to our
+                    <span className="font-semibold text-blue-800">
+                      {" "}New Ukhra Youth Computer Training Centre
+                    </span>. By enrolling here, you have taken a meaningful step toward building a strong and independent future in today’s digital world.
+                  </p>
+
+                  <p>
+                    In today’s competitive era,
+                    <span className="font-semibold"> computer knowledge is not just a skill</span> —
+                    it is a gateway to employment, entrepreneurship, and self-reliance.
+                  </p>
+
+                  <p>
+                    Our state,
+                    <span className="font-semibold text-blue-800"> West Bengal</span>,
+                    has always been known for its rich culture, intelligence, and talent.
+                    You are the new generation who will carry this legacy forward in the field of technology and innovation.
+                  </p>
+
+                  <p>
+                    Through this training, you are not only learning computer applications but also building confidence, discipline, and professional skills.
+                  </p>
+
+                  {/* Encouragement Block */}
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-600 p-5 md:p-8 rounded-xl md:rounded-2xl">
+                    <p className="font-semibold text-blue-900 text-lg mb-3 md:mb-4">
+                      I encourage you to:
+                    </p>
+                    <ul className="space-y-2 md:space-y-3">
+                      <li>• Attend classes regularly and practice daily.</li>
+                      <li>• Stay curious and keep learning beyond the classroom.</li>
+                      <li>• Maintain discipline and respect within the centre.</li>
+                      <li>• Use your digital knowledge responsibly and ethically.</li>
+                      <li>• Believe in your abilities and aim high.</li>
+                    </ul>
+                  </div>
+
+                  <p>
+                    The government has provided this platform for your growth. Make full use of this opportunity. Believe in yourself, stay focused on your goals, and never be afraid of hard work.
+                  </p>
+
+                  <p>
+                    Your success will not only make your family proud but will also bring pride to our centre and our community. Remember, success comes to those who are dedicated and hardworking.
+                  </p>
+
+                  <p className="font-semibold text-gray-900">
+                    Stay focused, stay positive, and keep moving forward.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </ScrollReveal>
+        </section>
+
+        {/* ================= STATS ================= */}
+        <section className="bg-[#0f172a] py-10 relative overflow-hidden">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-4 gap-10 text-center">
+
+              {[
+                { value: 2009, label: "Established" },
+                { value: 16, label: "Years of Excellence", suffix: "+" },
+                { value: 4400, label: "Students Trained", suffix: "+" },
+                { value: 100, label: "Practical Focus", suffix: "%" },
+              ].map((item, i) => (
+                <ScrollReveal key={i} delay={i * 200}>
+                  <div className="bg-white/10 backdrop-blur-xl border border-white/20 
                                     p-14 rounded-3xl shadow-2xl 
                                     hover:scale-105 transition duration-500 
                                     flex flex-col justify-center h-full">
 
-                  <h2 className="text-5xl font-bold text-yellow-400 mb-4">
-                    <AnimatedNumber
-                      value={item.value}
-                      suffix={item.suffix || ""}
-                    />
-                  </h2>
+                    <h2 className="text-5xl font-bold text-yellow-400 mb-4">
+                      <AnimatedNumber
+                        value={item.value}
+                        suffix={item.suffix || ""}
+                      />
+                    </h2>
 
-                  <p className="text-gray-200 text-lg min-h-[56px] flex items-center justify-center">
-                    {item.label}
-                  </p>
+                    <p className="text-gray-200 text-lg min-h-[56px] flex items-center justify-center">
+                      {item.label}
+                    </p>
 
-                </div>
-              </ScrollReveal>
-            ))}
+                  </div>
+                </ScrollReveal>
+              ))}
+
+            </div>
+          </div>
+        </section>
+
+
+
+        {/* ================= VISION MISSION ================= */}
+        <section className="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-32">
+          <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-stretch">
+
+            <ScrollReveal>
+              <div className="bg-white/10 backdrop-blur-lg p-12 rounded-3xl border border-white/20 h-full flex flex-col">
+                <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+
+                <p className="text-gray-200 leading-7 flex-1">
+                  To become a center of excellence in digital education
+                  by fostering innovation, professionalism, and continuous growth.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={200}>
+              <div className="bg-white/10 backdrop-blur-lg p-12 rounded-3xl border border-white/20 h-full flex flex-col">
+                <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+
+                <ul className="space-y-3 text-gray-200 flex-1">
+                  <li>• Deliver industry-aligned programs</li>
+                  <li>• Bridge academic & industry gaps</li>
+                  <li>• Develop technical confidence</li>
+                  <li>• Prepare students for long-term success</li>
+                </ul>
+              </div>
+            </ScrollReveal>
 
           </div>
-        </div>
-      </section>
+        </section>
 
-
-
-      {/* ================= VISION MISSION ================= */}
-      <section className="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-32">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-stretch">
-
+        {/* ================= COMMITMENT ================= */}
+        <section className="py-32 bg-[#0f172a] text-white text-center">
           <ScrollReveal>
-            <div className="bg-white/10 backdrop-blur-lg p-12 rounded-3xl border border-white/20 h-full flex flex-col">
-              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-
-              <p className="text-gray-200 leading-7 flex-1">
-                To become a center of excellence in digital education
-                by fostering innovation, professionalism, and continuous growth.
+            <div className="max-w-4xl mx-auto px-6">
+              <h2 className="text-4xl font-bold mb-6">
+                Our Commitment to Excellence
+              </h2>
+              <p className="text-gray-300 leading-8">
+                With over 16 years of legacy and 4,400+ trained students,
+                we are dedicated to transforming learners into confident,
+                future-ready professionals.
               </p>
             </div>
           </ScrollReveal>
+        </section>
 
-          <ScrollReveal delay={200}>
-            <div className="bg-white/10 backdrop-blur-lg p-12 rounded-3xl border border-white/20 h-full flex flex-col">
-              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-
-              <ul className="space-y-3 text-gray-200 flex-1">
-                <li>• Deliver industry-aligned programs</li>
-                <li>• Bridge academic & industry gaps</li>
-                <li>• Develop technical confidence</li>
-                <li>• Prepare students for long-term success</li>
-              </ul>
-            </div>
-          </ScrollReveal>
-
-        </div>
-      </section>
-
-      {/* ================= COMMITMENT ================= */}
-      <section className="py-32 bg-[#0f172a] text-white text-center">
-        <ScrollReveal>
-          <div className="max-w-4xl mx-auto px-6">
-            <h2 className="text-4xl font-bold mb-6">
-              Our Commitment to Excellence
-            </h2>
-            <p className="text-gray-300 leading-8">
-              With over 16 years of legacy and 4,400+ trained students,
-              we are dedicated to transforming learners into confident,
-              future-ready professionals.
-            </p>
-          </div>
-        </ScrollReveal>
-      </section>
-
-    </div>
+      </div>
+    </>
   );
 }
 

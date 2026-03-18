@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import HeroSection from "../components/HeroSection";
 import courses from "../data/coursesData";
 import galleryImages from "../data/galleryImages";
@@ -78,6 +79,38 @@ function Home() {
 
     return (
         <div>
+
+            <Helmet >
+                <title>
+                    Best Computer Training Institute in Ukhra, Pandeshwar & Haripur | Ukhra Youth
+                </title>
+
+                <meta
+                    name="description"
+                    content="Join Ukhra Youth Computer Training Centre in Ukhra, Pandeshwar, Haripur & Dakshin Khanda. Learn DDTA, Tally, Spoken English, Web Development with certification."
+                />
+
+                <meta
+                    name="keywords"
+                    content="computer training institute in Ukhra, Pandeshwar computer course, Haripur computer training centre, Dakshin Khanda institute, DDTA course Ukhra, Tally course Pandeshwar, Spoken English Haripur, Web Development course Ukhra"
+                />
+
+                <meta name="author" content="Ukhra Youth Computer Training Centre" />
+
+                {/* Open Graph (for sharing) */}
+                <meta property="og:title" content="Ukhra Youth Computer Training Centre" />
+                <meta
+                    property="og:description"
+                    content="Best computer training institute in Ukhra, Pandeshwar, Haripur & Dakshin Khanda. Courses: DDTA, Tally, Spoken English, Web Development."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://ukhrayouth.in/" />
+
+                {/* Extra Local SEO Boost */}
+                <meta name="geo.region" content="IN-WB" />
+                <meta name="geo.placename" content="Ukhra, Pandeshwar, Haripur, Dakshin Khanda" />
+            </Helmet>
+
             <HeroSection />
 
             {/* ================= STATS SECTION (NEW) ================= */}
@@ -98,7 +131,7 @@ function Home() {
                             { value: 16, label: "Years of Excellence", suffix: "+" },
                             { value: 4400, label: "Students Trained", suffix: "+" },
                             { value: 100, label: "Practical Focus", suffix: "%" },
-                            
+
                         ].map((item, i) => (
                             <ScrollReveal key={i} delay={i * 200}>
                                 <div className="bg-white/10 backdrop-blur-xl border border-white/20 
@@ -133,7 +166,9 @@ function Home() {
                                 Popular Courses
                             </h2>
                             <p className="text-gray-500 mt-4 text-lg">
-                                Industry-oriented programs designed for real career growth
+                                <p>
+                                    We provide the best computer training in Ukhra, Pandeshwar, Haripur and Dakshin Khanda with popular courses like DDTA, Tally, Spoken English and Web Development.
+                                </p>
                             </p>
                             <div className="w-24 h-1 bg-orange-500 mx-auto mt-6 rounded-full"></div>
                         </div>
@@ -305,7 +340,7 @@ function Home() {
 
                         </div>
                     </ScrollReveal>
-                   
+
                 </div>
             </section>
 
