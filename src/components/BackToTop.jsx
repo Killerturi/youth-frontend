@@ -41,7 +41,7 @@ function BackToTop() {
 
     return (
         <div
-            className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-30 transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                 }`}
         >
             <button

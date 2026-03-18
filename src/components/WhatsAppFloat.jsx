@@ -12,7 +12,7 @@ function WhatsAppFloat() {
   )}`;
 
   return (
-    <div className="fixed bottom-8 right-8 z-50">
+    <div className="fixed bottom-8 right-8 z-40">
 
       {/* CALL BUTTON */}
       <a

@@ -109,7 +109,7 @@ function Footer() {
 
       {/* BOTTOM COPYRIGHT */}
       <div className="bg-[#16202a] text-center py-4 text-sm text-gray-400">
-        © 2026 New Ukhra Youth Computer Training Centre | All Rights Reserved1
+        © 2026 New Ukhra Youth Computer Training Centre, Ukhra, West Bengal - 713363 | All Rights Reserved
       </div>
     </footer>
   );

@@ -82,12 +82,12 @@ function Home() {
 
             <Helmet >
                 <title>
-                    Best Computer Training Institute in Ukhra, Pandeshwar & Haripur | Ukhra Youth
+                    Best Computer Training Institute in Ukhra, Pandeshwar , Haripur,Jhanjra  | Ukhra Youth
                 </title>
 
                 <meta
                     name="description"
-                    content="Join Ukhra Youth Computer Training Centre in Ukhra, Pandeshwar, Haripur & Dakshin Khanda. Learn DDTA, Tally, Spoken English, Web Development with certification."
+                    content="Join Ukhra Youth Computer Training Centre in Ukhra, Pandeshwar, Haripur , Dakshin Khanda,Jhanjra & Laudoha. Learn DDTA, Tally, Spoken English, Web Development with certification."
                 />
 
                 <meta
@@ -101,14 +101,14 @@ function Home() {
                 <meta property="og:title" content="Ukhra Youth Computer Training Centre" />
                 <meta
                     property="og:description"
-                    content="Best computer training institute in Ukhra, Pandeshwar, Haripur & Dakshin Khanda. Courses: DDTA, Tally, Spoken English, Web Development."
+                    content="Best computer training institute in Ukhra, Pandeshwar, Haripur, Dakshin Khanda, Jhanjra & Laudoha . Courses: DDTA, Tally, Spoken English, Web Development."
                 />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://ukhrayouth.in/" />
 
                 {/* Extra Local SEO Boost */}
                 <meta name="geo.region" content="IN-WB" />
-                <meta name="geo.placename" content="Ukhra, Pandeshwar, Haripur, Dakshin Khanda" />
+                <meta name="geo.placename" content="Ukhra, Pandeshwar, Haripur, Dakshin Khanda, Jhanjra, Laudoha" />
             </Helmet>
 
             <HeroSection />
@@ -167,7 +167,7 @@ function Home() {
                             </h2>
                             <p className="text-gray-500 mt-4 text-lg">
                                 <p>
-                                    We provide the best computer training in Ukhra, Pandeshwar, Haripur and Dakshin Khanda with popular courses like DDTA, Tally, Spoken English and Web Development.
+                                    We provide the best computer training in Ukhra, Pandeshwar, Haripur, Dakshin Khanda, Jhanjra & Laudoha with popular courses like DDTA, Tally, Spoken English and Web Development.
                                 </p>
                             </p>
                             <div className="w-24 h-1 bg-orange-500 mx-auto mt-6 rounded-full"></div>
