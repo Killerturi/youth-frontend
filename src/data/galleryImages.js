@@ -33,6 +33,7 @@ import img30 from "../assets/gallery/img30.jpg";
 import img31 from "../assets/gallery/img31.jpg";
 import img32 from "../assets/gallery/img32.jpg";
 import img33 from "../assets/gallery/img33.jpg";
+import img34 from "../assets/gallery/img34.jpg";
 
 const galleryImages = [
   { id: 1, src: img1 },
@@ -51,6 +52,7 @@ const galleryImages = [
   { id: 15, src: img15 },
   { id: 16, src: img16 },
   { id: 17, src: img17 },
+  { id: 18, src: img18 },
   { id: 19, src: img19 },
   { id: 20, src: img20 },
   { id: 21, src: img21 },
@@ -66,6 +68,7 @@ const galleryImages = [
   { id: 31, src: img31 },
   { id: 32, src: img32 },
   { id: 33, src: img33 },
+  { id: 34, src: img34 },
 ];
 
 export default galleryImages;
