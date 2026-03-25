@@ -14,7 +14,7 @@ function WhatsAppFloat() {
   return (
     <>
       {/* ================= MOBILE ================= */}
-      <div className="fixed right-4 bottom-8 z-40 flex flex-col items-center gap-3 md:hidden">
+      <div className="fixed right-4 bottom-6 z-40 flex flex-col items-center gap-3 md:hidden">
         {/* TOGGLE BUTTON */}
 
         {/* ACTIONS */}
