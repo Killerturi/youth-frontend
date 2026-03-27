@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Phone } from "lucide-react";
 
 function WhatsAppFloat() {
   const [open, setOpen] = useState(false);
+  const [hideAtBottom, setHideAtBottom] = useState(false);
 
   const whatsappNumber = "919732081768";
   const whatsappMessage = "Hello, I want to know more about your courses.";
@@ -11,10 +12,28 @@ function WhatsAppFloat() {
     whatsappMessage,
   )}`;
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const isNearBottom =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 120;
+
+      setHideAtBottom(isNearBottom);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       {/* ================= MOBILE ================= */}
-      <div className="fixed right-4 bottom-6 z-40 flex flex-col items-center gap-3 md:hidden">
+      <div
+        className={`fixed right-4 bottom-6 z-40 flex flex-col items-center gap-3 md:hidden transition-all duration-300 ${
+          hideAtBottom
+            ? "opacity-0 translate-y-10 pointer-events-none"
+            : "opacity-100 translate-y-0"
+        }`}
+      >
         {/* TOGGLE BUTTON */}
 
         {/* ACTIONS */}

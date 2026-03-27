@@ -13,10 +13,12 @@ function BackToTop() {
         document.documentElement.clientHeight;
 
       const percent = (scrollTop / height) * 100;
-
       setScrollPercent(percent);
 
-      if (scrollTop > 400) {
+      const isNearBottom =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 100;
+
+      if (scrollTop > 400 && !isNearBottom) {
         setVisible(true);
       } else {
         setVisible(false);
@@ -24,7 +26,6 @@ function BackToTop() {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
