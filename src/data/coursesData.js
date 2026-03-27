@@ -18,7 +18,7 @@ const courses = [
         "Database Management System (MS Access 2016)",
         "Internet & E-mail",
         "Mobile Operating System",
-        "Cyber Security Basics"
+        "Cyber Security Basics",
       ],
       semester2: [
         "Introduction to Core Programming Concepts",
@@ -28,9 +28,9 @@ const courses = [
         "HTML5",
         "Application Security",
         "Object-Oriented Programming (OOPS) with Java",
-        "Relational Database Management System (MySQL)"
-      ]
-    }
+        "Relational Database Management System (MySQL)",
+      ],
+    },
   },
   {
     id: 2,
@@ -63,38 +63,40 @@ const courses = [
     category: "Language",
     duration: "4 Months",
     fees: "(Changable)",
+    features: {
+      careerSupport: true,
+    },
     syllabus: {
       month1: [
         "Foundation & Daily Vocabulary (Breaking the Fear)",
         "Basic Greetings & Self Introduction",
         "Common Daily Use Sentences",
-        "Basic Pronunciation Practice"
+        "Basic Pronunciation Practice",
       ],
       month2: [
         "Essential Grammar (Tense Basics, Parts of Speech)",
         "Simple Conversation Practice",
         "Question Formation",
-        "Sentence Structure Practice"
+        "Sentence Structure Practice",
       ],
       month3: [
         "Narrating Daily Activities",
         "Expressing Thoughts & Opinions",
         "Storytelling Practice",
-        "Role Play Conversations"
+        "Role Play Conversations",
       ],
       month4: [
         "Fluency Development Techniques",
         "Public Speaking Practice",
         "Interview Preparation Basics",
-        "Real-life Conversation Practice"
+        "Real-life Conversation Practice",
       ],
       activities: [
         "Listening: News, simple podcasts, or children’s stories",
         "Speaking: Daily conversation practice, reading aloud, tongue twisters",
-        "Vocabulary: Learning 5–10 new words daily"
-      ]
+        "Vocabulary: Learning 5–10 new words daily",
+      ],
     },
-
   },
 
   {
@@ -104,34 +106,36 @@ const courses = [
     category: "Advanced",
     duration: "6 Months",
     fees: 10000,
+    features: {
+      careerSupport: true,
+    },
     syllabus: {
       module1: [
         "HTML5 – Structure & Semantic Tags",
         "CSS3 – Styling, Flexbox & Grid",
-        "Responsive Design Techniques"
+        "Responsive Design Techniques",
       ],
       module2: [
         "Bootstrap – Layout & Components",
         "JavaScript – Basics to Advanced Concepts",
-        "DOM Manipulation & ES6"
+        "DOM Manipulation & ES6",
       ],
       module3: [
         "React JS – Components & JSX",
         "Props, State & Hooks",
-        "React Router & Project Structure"
+        "React Router & Project Structure",
       ],
       module4: [
         "ChatGPT for Developers",
         "Using AI Tools for Code Optimization",
-        "AI-assisted Debugging & Productivity"
+        "AI-assisted Debugging & Productivity",
       ],
       module5: [
         "Final Frontend Project",
         "Hosting & Deployment (Vercel / Netlify)",
-        "Portfolio Development"
-      ]
-    }
-
+        "Portfolio Development",
+      ],
+    },
   },
   {
     id: 5,
@@ -140,34 +144,36 @@ const courses = [
     category: "Advanced",
     duration: "5 Months",
     fees: 7000,
+    features: {
+      careerSupport: true,
+    },
     syllabus: {
       module1: [
         "HTML5 – Structure & Semantic Tags",
         "CSS3 – Styling, Flexbox & Grid",
-        "Responsive Web Design"
+        "Responsive Web Design",
       ],
       module2: [
         "Bootstrap – Layout & Components",
         "Website Layout Design Principles",
-        "UI/UX Basics"
+        "UI/UX Basics",
       ],
       module3: [
         "JavaScript – Basics & DOM Manipulation",
         "Interactive Website Development",
-        "Form Validation"
+        "Form Validation",
       ],
       module4: [
         "ChatGPT for Web Designers",
         "Using AI Tools for UI/UX Design",
-        "AI-assisted Code Generation"
+        "AI-assisted Code Generation",
       ],
       module5: [
         "Live Website Project",
         "Hosting & Deployment (Vercel / Netlify / cPanel)",
-        "Portfolio Website Creation"
-      ]
-    }
-
+        "Portfolio Website Creation",
+      ],
+    },
   },
 
   {
@@ -177,6 +183,9 @@ const courses = [
     category: "Advanced",
     duration: "6 Months",
     fees: 12000,
+    features: {
+      careerSupport: true,
+    },
     syllabus: {
       semester1: [
         "Introduction to Programming & JavaScript",
@@ -193,7 +202,7 @@ const courses = [
         "Node.js Modules & NPM",
         "File System Module",
         "Creating HTTP Servers with Node.js",
-        "Express.js Framework Basics"
+        "Express.js Framework Basics",
       ],
       semester2: [
         "Routing & Middleware in Express",
@@ -209,9 +218,9 @@ const courses = [
         "Role-Based Authorization",
         "Backend Project Development",
         "Deployment (Render / VPS / Railway)",
-        "Portfolio Backend Project"
-      ]
-    }
+        "Portfolio Backend Project",
+      ],
+    },
   },
 
   {
@@ -221,6 +230,9 @@ const courses = [
     category: "Advanced",
     duration: "12 Months",
     fees: 20000,
+    features: {
+      careerSupport: true,
+    },
     syllabus: {
       semester1: [
         "HTML5 – Structure & Semantic Tags",
@@ -230,7 +242,7 @@ const courses = [
         "Git & GitHub Version Control",
         "React JS – Components, Props & State",
         "React Hooks & React Router",
-        "Frontend Project Development"
+        "Frontend Project Development",
       ],
       semester2: [
         "Node.js – Backend Development",
@@ -241,14 +253,12 @@ const courses = [
         "ChatGPT for Developers",
         "AI Tools for Code Optimization & Debugging",
         "Deployment (Vercel, Render, VPS)",
-        "Portfolio & Live Project"
-      ]
-    }
-
+        "Portfolio & Live Project",
+      ],
+    },
   },
 
   ,
-
   // ===============================
   // DESKTOP PUBLISHING
   // ===============================
@@ -426,8 +436,8 @@ const courses = [
       "Imaging with Adobe Photoshop",
       "2D Animation with Flash",
       "Authoring with Flash",
-      "Sound Editing with Sound Forge"
-    ]
+      "Sound Editing with Sound Forge",
+    ],
   },
 
   {
@@ -443,15 +453,15 @@ const courses = [
         "Imaging with Adobe Photoshop",
         "2D Animation with Flash",
         "Authoring with Flash",
-        "Sound Editing with Sound Forge"
+        "Sound Editing with Sound Forge",
       ],
       semester2: [
         "Video Composition & Editing with Adobe After Effects",
         "Deek-Link Card with Adobe Premiere Pro",
         "3D Animation with Autodesk 3D Max",
-        "Autodesk Maya"
-      ]
-    }
+        "Autodesk Maya",
+      ],
+    },
   },
 
   {
@@ -467,8 +477,8 @@ const courses = [
       "Basic Hardware Theory",
       "PC Parts (Motherboard, HDD, Monitor etc.) Construction & Functioning",
       "Software Installation",
-      "Troubleshooting"
-    ]
+      "Troubleshooting",
+    ],
   },
 
   {
@@ -485,7 +495,7 @@ const courses = [
         "Hardware Theory",
         "PC Components (Motherboard, HDD, Monitor etc.) Construction & Functioning",
         "Software Installation",
-        "Troubleshooting"
+        "Troubleshooting",
       ],
       semester2: [
         "Basic Network Theory",
@@ -495,9 +505,9 @@ const courses = [
         "Client-Server Networking",
         "Internet Setup",
         "Proxy Server Setup",
-        "Windows NT Network Setup"
-      ]
-    }
+        "Windows NT Network Setup",
+      ],
+    },
   },
 
   {
@@ -513,8 +523,8 @@ const courses = [
       "MS-Word",
       "AUTOCAD",
       "Autolisp",
-      "Internet & E-Mail"
-    ]
+      "Internet & E-Mail",
+    ],
   },
 
   {
@@ -528,8 +538,8 @@ const courses = [
       "Windows NT",
       "SQL Server",
       "ORACLE",
-      "Real Life Project on ORACLE"
-    ]
+      "Real Life Project on ORACLE",
+    ],
   },
 
   {
@@ -543,9 +553,9 @@ const courses = [
       semester1: [
         "Essential Computer & Coding Environment",
         "Core Python Programming (Heavy Focus)",
-        "Core Python Data Structures"
-      ]
-    }
+        "Core Python Data Structures",
+      ],
+    },
   },
 
   {
@@ -563,8 +573,8 @@ const courses = [
       "Prompt Engineering for Green Use Cases (Hands-On)",
       "Python Programming & Data Basics for Sustainability",
       "Sustainable AI & Green Computing",
-      "Mini Green AI Projects (Tool-Based)"
-    ]
+      "Mini Green AI Projects (Tool-Based)",
+    ],
   },
   {
     id: 24,
@@ -648,8 +658,7 @@ const courses = [
       "MS-Office (Word, Excel & PowerPoint)",
       "Database Management System (Visual FoxPro)",
     ],
-  }
-
+  },
 ];
 
 export default courses;
