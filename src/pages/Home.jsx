@@ -157,7 +157,7 @@ function Home() {
                 </div>
             </section>
 
-            {/* ================= COURSES ================= */}
+            {/* ================= COURSES1 ================= */}
             <section className="py-22 bg-gradient-to-b from-white to-[#f1f5f9]">
                 <div className="max-w-7xl mx-auto px-6">
                     <ScrollReveal>
