@@ -322,7 +322,7 @@ function About() {
               {[
                 { value: 2009, label: "Established" },
                 { value: 16, label: "Years of Excellence", suffix: "+" },
-                { value: 4400, label: "Students Trained", suffix: "+" },
+                { value: 4500, label: "Students Trained", suffix: "+" },
                 { value: 100, label: "Practical Focus", suffix: "%" },
               ].map((item, i) => (
                 <ScrollReveal key={i} delay={i * 200}>

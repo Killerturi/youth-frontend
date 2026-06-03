@@ -96,7 +96,7 @@ function Navbar() {
               Contact
             </NavLink>
             <NavLink
-              to="https://quiz-frontend-psi-six.vercel.app/"
+              to="https://youthquiz.netlify.app/"
               target="_blank"
               className="relative group text-blue-900 font-semibold flex items-center"
             >
