@@ -139,7 +139,7 @@ function Navbar() {
             <NavLink onClick={() => setMobileOpen(false)} to="/contact">
               Contact
             </NavLink>
-            <NavLink to="https://quiz-frontend-psi-six.vercel.app/" target="_blank" className="hover:text-blue-900 transition">
+            <NavLink to="https://youthquiz.netlify.app/" target="_blank" className="hover:text-blue-900 transition">
               Mock Test
             </NavLink>
           </div>
