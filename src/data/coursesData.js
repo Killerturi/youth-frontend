@@ -57,6 +57,43 @@ const courses = [
   },
 
   {
+    id: 28,
+    code: "AEAI",
+    title: "Advanced Excel With AI (AEAI)",
+    category: "Job Oriented",
+    duration: "4 Months",
+    fees: 5500,
+    features: {
+      careerSupport: true,
+    },
+    syllabus: {
+      module1: [
+        "Excel Professional Foundation",
+        "Formula Mastery",
+        "Advanced Formula Engineering",
+        "Professional Reporting",
+      ],
+      module2: [
+        "Dashboard Design System",
+        "Interactive Dashboards",
+        "MIS Reporting Specialist",
+        "AI Integration with Excel",
+      ],
+      module3: [
+        "Power Query Mastery",
+        "Power Pivot & Data Modeling",
+        "Excel Automation",
+        "Advanced Automation + AI",
+      ],
+      module4: [
+        "Business Analyst Projects",
+        "Dashboard Specialist Projects",
+        "Data Analyst Projects",
+        "Career Preparation + Final Evaluation",
+      ],
+    },
+  },
+  {
     id: 3,
     code: "SEB",
     title: "Spoken English (Basic)",
@@ -103,7 +140,7 @@ const courses = [
     id: 4,
     code: "FDAI",
     title: "Frontend Development with AI (FDAI)",
-    category: "Advanced",
+    category: "Job Oriented",
     duration: "6 Months",
     fees: 10000,
     features: {
@@ -141,7 +178,7 @@ const courses = [
     id: 5,
     code: "WDAI",
     title: "Web Design with AI (WDAI)",
-    category: "Advanced",
+    category: "Job Oriented",
     duration: "5 Months",
     fees: 7000,
     features: {
@@ -180,7 +217,7 @@ const courses = [
     id: 6,
     code: "NODE-BACKEND",
     title: "Node.js Backend Development (NODE-BACKEND)",
-    category: "Advanced",
+    category: "Job Oriented",
     duration: "6 Months",
     fees: 12000,
     features: {
@@ -227,7 +264,7 @@ const courses = [
     id: 7,
     code: "MERN-AI",
     title: "MERN Stack Web Development with AI (MERN-AI)",
-    category: "Advanced",
+    category: "Job Oriented",
     duration: "12 Months",
     fees: 20000,
     features: {
